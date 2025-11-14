@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tüm Hizmetlerimiz | MEG Software</title>
+    <meta name="description" content="MEG Software'in tüm yazılım geliştirme, web tasarımı ve mobil uygulama çözümlerini keşfedin.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Sayfa Başlığı Stilleri */
+        .page-header {
+            background: linear-gradient(135deg, #1a237e, #448aff);
+            color: white;
+            padding: 120px 0 60px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .page-header h1 {
+            font-size: 3.5em;
+            font-weight: 800;
+        }
+        /* Hizmet Kartları Stilleri */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 50px 0;
+        }
+        .service-card {
+            background-color: var(--bg-light);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-light);
+            border-top: 5px solid var(--meg-secondary);
+            transition: all 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        .service-card i {
+            font-size: 2.5em;
+            color: var(--meg-primary);
+            margin-bottom: 15px;
+        }
+        .service-card h3 {
+            font-size: 1.5em;
+            color: var(--meg-primary);
+            margin-bottom: 10px;
+        }
+        .service-card p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+        .service-card a {
+            color: var(--meg-secondary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        @media (max-width: 992px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo">MEG Software</a>
+            <div class="nav-links">
+                <a href="hizmetler.html">Hizmetler</a>
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="kariyer.html">Kariyer</a>
+                <a href="iletisim.html" class="cta-nav">Bize Ulaşın</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Kapsamlı Teknoloji Çözümlerimiz</h1>
+            <p>Yazılımdan tasarıma, masaüstünden mobile kadar tüm ihtiyaçlarınızı tek çatıda karşılıyoruz.</p>
+        </div>
+    </section>
+
+    <section class="services-content">
+        <div class="container services-grid">
+            
+            <div class="service-card">
+                <i class="fas fa-building"></i>
+                <h3>Kurumsal Web Sitesi</h3>
+                <p>Markanızın vizyonunu yansıtan, güvenilir, hızlı ve SEO uyumlu kurumsal web çözümleri.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-rss"></i>
+                <h3>Blog Web Sitesi</h3>
+                <p>İçerik pazarlaması için ideal, kolay yönetilebilir ve okuyucu odaklı blog platformları.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>APK Webview Uygulaması</h3>
+                <p>Mevcut web sitenizi hızlıca Android markete taşımak için düşük maliyetli mobil çözüm.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Exe Masaüstü Programı</h3>
+                <p>Windows için özel olarak geliştirilmiş, yüksek performanslı dahili iş uygulamaları.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-box-open"></i>
+                <h3>Setup'lı Exe Programı</h3>
+                <p>Profesyonel kurulum sihirbazı ile kolay dağıtılabilen kurumsal masaüstü yazılımları.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-users-cog"></i>
+                <h3>Teknoloji Danışmanlığı</h3>
+                <p>Projeleriniz için en uygun teknolojiyi ve stratejiyi belirleme konusunda uzman rehberlik.</p>
+                <a href="iletisim.html">Danışmanlık Alın <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MEG Software. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+</body>
+</html> 

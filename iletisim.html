@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | MEG Software</title>
+    <meta name="description" content="MEG Software ile iletişime geçin. Adres, telefon, e-posta bilgileri ve hızlı iletişim formu.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Sayfa Başlığı Stilleri */
+        .page-header {
+            background: linear-gradient(135deg, #1a237e, #448aff);
+            color: white;
+            padding: 120px 0 60px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .page-header h1 {
+            font-size: 3.5em;
+            font-weight: 800;
+        }
+        /* İletişim Izgarası Stilleri */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr; /* Bilgiler ve Form/Harita */
+            gap: 50px;
+            padding: 50px 0 80px;
+        }
+        
+        /* İletişim Bilgileri Stilleri */
+        .contact-info {
+            line-height: 1.8;
+        }
+        .contact-info h2 {
+            color: var(--meg-primary);
+            font-size: 2em;
+            margin-bottom: 25px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .contact-item i {
+            font-size: 1.8em;
+            color: var(--meg-secondary);
+            margin-right: 15px;
+            width: 30px;
+            text-align: center;
+        }
+        
+        /* İletişim Formu Stilleri */
+        .contact-form-section h2 {
+            color: var(--meg-primary);
+            font-size: 2em;
+            margin-bottom: 25px;
+        }
+        .contact-form form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow-light);
+        }
+        .contact-form input[type="text"], 
+        .contact-form input[type="email"], 
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--meg-primary);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: var(--meg-secondary);
+        }
+
+        /* Harita Stili */
+        .google-map {
+            margin-top: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .google-map iframe {
+            width: 100%;
+            height: 350px;
+            border: 0;
+        }
+        
+        @media (max-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo">MEG Software</a>
+            <div class="nav-links">
+                <a href="hizmetler.html">Hizmetler</a>
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="kariyer.html">Kariyer</a>
+                <a href="iletisim.html" class="cta-nav">Bize Ulaşın</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Bizimle İletişime Geçin</h1>
+            <p>Proje fikirlerinizi paylaşın veya merak ettiklerinizi bize sorun.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container contact-grid">
+            
+            <div class="contact-info">
+                <h2>İletişim Bilgileri</h2>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Adres</strong><br>
+                        Erzene Mahallesi 113/17 Sok. No:169 Bornova/İzmir
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>Telefon</strong><br>
+                        +90 (532) 236 90 39
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>E-Posta</strong><br>
+                        themegsoftware@gmail.com
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>Çalışma Saatleri</strong><br>
+                        Hafta İçi: 09:00 - 21:30
+                        Hafta Sonu: 10:00 - 18:00
+                    </div>
+                </div>
+
+                <div class="google-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d153242.067341078!2d29.006900450000003!3d41.00823755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab0015096b797%3A0x6b7b2586b8c4c79c!2sBili%C5%9Fim%20Vadisi%20Teknopark!5e0!3m2!1str!2str!4v1701977717467!5m2!1str!2str" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+            </div>
+
+            <div class="contact-form-section">
+                <h2>Bize Mesaj Gönderin</h2>
+                <div class="contact-form">
+                    <form action="submit_form.php" method="POST">
+                        <input type="text" name="name" placeholder="Adınız Soyadınız" required>
+                        <input type="email" name="email" placeholder="E-posta Adresiniz" required>
+                        <input type="text" name="subject" placeholder="Konu (Proje Teklifi, Genel Soru vb.)" required>
+                        <textarea name="message" placeholder="Detaylı Mesajınız" required></textarea>
+                        <button type="submit">Gönder</button>
+                        
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MEG Software. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+</body>
+</html>
